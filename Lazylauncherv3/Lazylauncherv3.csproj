@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{787D7CC3-D485-4B04-8572-96B8D38E3B75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>svchost</RootNamespace>
+    <AssemblyName>svchost</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\i-poi\Desktop\Holyness pro\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F7EF77D9DB3D046F7A100EA974B9517F0188C345</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Lazylauncherv3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>holyness-logo-light.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dictionary.cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="Utilities\bugFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\bugFix.Designer.cs">
+      <DependentUpon>bugFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login-Register\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login-Register\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login-Register\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login-Register\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AlphaBlendTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\win32.cs" />
+    <Compile Include="Splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splashscreen.Designer.cs">
+      <DependentUpon>Splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KeyAuth.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\e11240f4fe281c9eee3c015550f4bb97103270f9d12a7dcdf2c740b795e2cab8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\e11240f4fe281c9eee3c015550f4bb97103270f9d12a7dcdf2c740b795e2cab8.Designer.cs">
+      <DependentUpon>e11240f4fe281c9eee3c015550f4bb97103270f9d12a7dcdf2c740b795e2cab8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\keyFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilities\keyFix.Designer.cs">
+      <DependentUpon>keyFix.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Utilities\bugFix.resx">
+      <DependentUpon>bugFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login-Register\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login-Register\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splashscreen.resx">
+      <DependentUpon>Splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Utilities\e11240f4fe281c9eee3c015550f4bb97103270f9d12a7dcdf2c740b795e2cab8.resx">
+      <DependentUpon>e11240f4fe281c9eee3c015550f4bb97103270f9d12a7dcdf2c740b795e2cab8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\keyFix.resx">
+      <DependentUpon>keyFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Lazylauncherv3_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-x.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-minus.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\holyness logo - light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subtract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 1040.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 1041.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\holyness logo - light1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN TO HOLYNES S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome, we missed you! Are you ready for 1v9_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 2 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 2 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stay logged in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create new account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forgot something_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-register-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 2 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 2 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-hide.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Union.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Be the part of Holyness!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 10 %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 61 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 10 %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 9 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plan labels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="holyness-logo-light.ico" />
+    <None Include="Resources\niuw.png" />
+    <None Include="Resources\Group 12342.png" />
+    <None Include="Resources\Group 55.png" />
+    <None Include="Resources\Group4 101.png" />
+    <None Include="Resources\Group4 10.png" />
+    <None Include="Resources\Group453.png" />
+    <None Include="Resources\HOLYNES S v11.201.png" />
+    <None Include="Resources\Group 56.png" />
+    <None Include="Resources\Group 63.png" />
+    <None Include="Resources\Group4151.png" />
+    <None Include="Resources\Group415.png" />
+    <None Include="Resources\Group 242.png" />
+    <None Include="Resources\Rectangle 5.png" />
+    <None Include="Resources\Support center.png" />
+    <None Include="Resources\Group 4212.png" />
+    <None Include="Resources\Group 155.png" />
+    <None Include="Resources\Group 15.png" />
+    <None Include="Resources\HOLYNES S v11.20.png" />
+    <None Include="Resources\Group210.png" />
+    <None Include="Resources\Group110.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
